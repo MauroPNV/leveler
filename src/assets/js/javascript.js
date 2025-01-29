@@ -6,7 +6,7 @@ let incorrectAnswers = [];  // Armazena as perguntas erradas
 // Carrega as perguntas do arquivo questions.json
 async function loadQuestions() {
     try {
-        const response = await fetch('questions.json');  // Ajuste o caminho conforme necessário
+        const response = await fetch('../questions.json');  // Ajuste o caminho conforme necessário
         questions = await response.json();
         selectRandomQuestions();  // Seleciona aleatoriamente 10 perguntas
     } catch (error) {
